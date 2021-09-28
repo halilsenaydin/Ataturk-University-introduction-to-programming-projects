@@ -1,41 +1,32 @@
-%ADI: HALÝL ÝBRAHÝM
-%SOYADI: ÞENAYDIN
-%ÖÐRENCÝ NO: 200707069
-%BÖLÜM: BÝLGÝSAYAR MÜHENDÝSLÝÐÝ BÖLÜMÜ
-%DERSÝN ADI VE DERSÝN KODU: PROGRAMLAMAYA GÝRÝÞ - BIM-103-50-50
-%DERSÝN VERÝLDÝÐÝ AKADEMÝK DÖNEM: 2020-2021 EÐÝTÝM ÖÐRETÝM YILI 1.YARIYIL
-%PROJENÝN NUMARASI: PROJE 1
-%DERSÝ VEREN ÖÐRETÝM ÜYESÝNÝN ADI: TOLGA AYDIN
-
 clear;
 clc;
 
-fprintf('PROGRAMI ÇALIÞTIRDIÐINIZ ÝÇÝN TEÞEKKÜR EDERÝM :) \n');
-%deðiþkenleri deve notasyonuna göre adlandýrdým.
-laptopFiyati=10000;%Laptobun orijinal fiyatý
-stok=500;%Laptobun stok sayýsý, deðiþken olaraak atamak istedim stok artarsa sadece deðiþkeni artýrmak yeterli olacaktýr.
+fprintf('PROGRAMI Ã‡ALIÅžTIRDIÄžINIZ Ä°Ã‡Ä°N TEÅžEKKÃœR EDERÄ°M :) \n');
+%deÄŸiÅŸkenleri deve notasyonuna gÃ¶re adlandÄ±rdÄ±m.
+laptopFiyati=10000;%Laptobun orijinal fiyatÄ±
+stok=500;%Laptobun stok sayÄ±sÄ±, deÄŸiÅŸken olaraak atamak istedim stok artarsa sadece deÄŸiÅŸkeni artÄ±rmak yeterli olacaktÄ±r.
 
-laptopSayisi=input('ALMAK ÝSTEDÝÐÝNÝZ LAPTOP MÝTARINI GÝRÝNÝZ: ');%ALMAK ÝSTEDÝÐÝ LAPTOP SAYISINI KULLANICI GÝRECEK
-if laptopSayisi<0%LAPTOP SAYISI 0 DAN KÜÇÜKSE KULLANICIYA BÝLGÝ VERÝLECEK VE TEKRAR GÝRÝLMESÝ ÝSTENECEK AMA BUNU YAPAMIYORUM ÇÜNKÜ PROGRAMDA DÖNGÜ KULLANMAK YASAKLANDI :(
-    disp('LÜTFEN MANTIKLI BÝR SAYI GÝRÝN. - DEÐER GÝRÝLMEYECEÐÝNÝ BÝLMENÝZ GEREKÝR :)');
+laptopSayisi=input('ALMAK Ä°STEDÄ°ÄžÄ°NÄ°Z LAPTOP MÄ°TARINI GÄ°RÄ°NÄ°Z: ');%ALMAK Ä°STEDÄ°ÄžÄ° LAPTOP SAYISINI KULLANICI GÄ°RECEK
+if laptopSayisi<0%LAPTOP SAYISI 0 DAN KÃœÃ‡ÃœKSE KULLANICIYA BÄ°LGÄ° VERÄ°LECEK VE TEKRAR GÄ°RÄ°LMESÄ° Ä°STENECEK AMA BUNU YAPAMIYORUM Ã‡ÃœNKÃœ PROGRAMDA DÃ–NGÃœ KULLANMAK YASAKLANDI :(
+    disp('LÃœTFEN MANTIKLI BÄ°R SAYI GÄ°RÄ°N. - DEÄžER GÄ°RÄ°LMEYECEÄžÄ°NÄ° BÄ°LMENÄ°Z GEREKÄ°R :)');
 else
-    if laptopSayisi>stok%ALINMAK ÝSTENEN LAPTOP SAYISI STOKDA YOKSA UYARI METNÝ VERÝLECEK,
-        disp('GÝRDÝÐÝNÝZ MÝKTARDA LAPTOBA SAHÝP DEÐÝLÝZ. STOÐUMUZDA ÞUANLIK 500 LAPTOP VAR.');
+    if laptopSayisi>stok%ALINMAK Ä°STENEN LAPTOP SAYISI STOKDA YOKSA UYARI METNÄ° VERÄ°LECEK,
+        disp('GÄ°RDÄ°ÄžÄ°NÄ°Z MÄ°KTARDA LAPTOBA SAHÄ°P DEÄžÄ°LÄ°Z. STOÄžUMUZDA ÅžUANLIK 500 LAPTOP VAR.');
     else
-        if laptopSayisi<=100%laptop sayýsý 100 den küçükse ve 100'e eþitse normal fiyatýndan satýlacak
+        if laptopSayisi<=100%laptop sayÄ±sÄ± 100 den kÃ¼Ã§Ã¼kse ve 100'e eÅŸitse normal fiyatÄ±ndan satÄ±lacak
             fatura=laptopSayisi*laptopFiyati;
-        elseif (laptopSayisi>100) && (laptopSayisi<200)%100'den sonraki her alýnan laptop için %10 iskonto uygulanacak.
+        elseif (laptopSayisi>100) && (laptopSayisi<200)%100'den sonraki her alÄ±nan laptop iÃ§in %10 iskonto uygulanacak.
             iskonto1=laptopFiyati*90/100;
             fatura=(100*laptopFiyati)+(laptopSayisi-100)*iskonto1;
                 
-        elseif laptopSayisi>=200%eðer laptop sayýsý 200'e eþit veya büyükse 200'den sonraki(200 dahil) her laptop için %15 iskonto uygulanacak
+        elseif laptopSayisi>=200%eÄŸer laptop sayÄ±sÄ± 200'e eÅŸit veya bÃ¼yÃ¼kse 200'den sonraki(200 dahil) her laptop iÃ§in %15 iskonto uygulanacak
             iskonto1=laptopFiyati*90/100;
             iskonto2=laptopFiyati*85/100;
                
-            fatura=(100*laptopFiyati)+(98*iskonto1)+((laptopSayisi-198)*iskonto2);%100 tanesi için normal fiyattan, 98 tanesi için(199-101) %10 iskonto uygulanacak,laptop_Sayisi-(198)tanesine de %15 iskonto uygulanacak.
+            fatura=(100*laptopFiyati)+(98*iskonto1)+((laptopSayisi-198)*iskonto2);%100 tanesi iÃ§in normal fiyattan, 98 tanesi iÃ§in(199-101) %10 iskonto uygulanacak,laptop_Sayisi-(198)tanesine de %15 iskonto uygulanacak.
         end
-        disp(['ALDIÐIN ÜRÜNLERÝN TOPLAM FÝYATI: ',num2str(fatura),' TL DÝR.']);%Fatura ekrana yazýlýyor
-        fprintf('ALIÞVERÝÞÝNÝZDE BÝZÝ TERCÝH ETTÝÐÝNÝZ ÝÇÝN TEÞEKKÜR EDERÝZ :) \n');%Teþekkür mesajýmýz :)  
+        disp(['ALDIÄžIN ÃœRÃœNLERÄ°N TOPLAM FÄ°YATI: ',num2str(fatura),' TL DÄ°R.']);%Fatura ekrana yazÄ±lÄ±yor
+        fprintf('ALIÅžVERÄ°ÅžÄ°NÄ°ZDE BÄ°ZÄ° TERCÄ°H ETTÄ°ÄžÄ°NÄ°Z Ä°Ã‡Ä°N TEÅžEKKÃœR EDERÄ°Z :) \n');%TeÅŸekkÃ¼r mesajÄ±mÄ±z :)  
    end
 end
     
