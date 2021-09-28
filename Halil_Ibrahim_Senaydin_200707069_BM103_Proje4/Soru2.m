@@ -1,8 +1,8 @@
-function gizemliKonumAdet = Halil_Ibrahim_Senaydin_200707069_BM103_Proje4_Soru2(M) % İnput olarak bir matris alacağız.
+function gizemliKonumAdet = Soru2(M) % İnput olarak bir matris alacağız.
 
 [satirSayisi,sutunSayisi] = size(M); % Matrisin boyutunu değişkenlere atıyoruz.
 
-if Halil_Ibrahim_Senaydin_200707069_BM103_Proje4_MatrisMi(M)
+if MatrisMi(M)
     gizemliKonumAdet = 0;
     return; % Eğer bu koşula girmişse alttaki kodlara bakmaya gerek yok.
 end
