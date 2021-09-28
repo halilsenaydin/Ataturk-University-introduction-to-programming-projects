@@ -1,4 +1,4 @@
-function sonuc  = first(A)
+function sonuc  = Halil_Ibrahim_Senaydin_200707069_BM103_Proje4_Soru1(A)
 
 diziBoyut = length(A);
 diziSatir = size(A);
