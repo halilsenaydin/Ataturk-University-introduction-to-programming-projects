@@ -1,4 +1,4 @@
-function sonuc  = Halil_Ibrahim_Senaydin_200707069_BM103_Proje4_Soru1(A)
+function sonuc  = Soru1(A)
 
 diziBoyut = length(A);
 diziSatir = size(A);
@@ -12,7 +12,7 @@ else
     if diziBoyut<3 % Dizi Boyutu 3'ten küçükse Bora dizisi değildir.
         sonuc = 0;
     else
-        enBuyukIndis = Halil_Ibrahim_Senaydin_200707069_BM103_Proje4_EnBuyukIndisBul(A); % Alt fonksiyon kullanarak dizideki en büyük elemanın indis numarasını sonuc değişkenine atadım.
+        enBuyukIndis = EnBuyukIndisBul(A); % Alt fonksiyon kullanarak dizideki en büyük elemanın indis numarasını sonuc değişkenine atadım.
         
         for i=1:enBuyukIndis-1 % En büyüğü bulana kadar sayılar küçükten büyüğe mi sıralanmış ?
             if A(i)>=A(i+1) % Dizinin o andaki elemanı bir sonraki elemanından büyükse sayac değişkenini artır.
