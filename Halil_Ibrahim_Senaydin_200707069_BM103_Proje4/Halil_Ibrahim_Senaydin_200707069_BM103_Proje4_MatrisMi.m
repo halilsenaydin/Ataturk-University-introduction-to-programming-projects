@@ -1,4 +1,4 @@
-function sonuc = MatrisMi(M)
+function sonuc = Halil_Ibrahim_Senaydin_200707069_BM103_Proje4_MatrisMi(M)
 
 [sutun,satir] = size(M);
 sonuc = 0; % Matris olduğunu kabul ettim, sıfır yaptım çünkü eğer matris ise ana fonksiyonda if'in içine girmek istemeyiz :)
