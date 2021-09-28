@@ -1,36 +1,28 @@
-%ADI: HALİL İBRAHİM
-%SOYADI: ŞENAYDIN
-%ÖĞRENCİ NO: 200707069
-%BÖLÜM: BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ
-%DERSİN ADI VE DERSİN KODU: PROGRAMLAMAYA GİRİŞ - BIM-103-50-50
-%DERSİN VERİLDİĞİ AKADEMİK DÖNEM: 2020-2021 EĞİTİM ÖĞRETİM YILI 1.YARIYIL
-%PROJENİN NUMARASI: PROJE 1
-%DERSİ VEREN ÖĞRETİM ÜYESİNİN ADI: TOLGA AYDIN
-
 clear;
 clc;
 
-%değişkenleri deve notasyonuna göre adlandırdım.
-maas=input('MAAŞINIZI TL OLARAK GİRİNİZ: ');%maas' kullanıcıdan aldık.
-if maas<0%maaş 0 dan küçük olamaz.
-    fprintf('NEGATİF BİR DEĞER GİRDİNİZ!!!\n');
+%deÄŸiÅŸkenleri deve notasyonuna gÃ¶re adlandÄ±rdÄ±m.
+
+maas=input('MAAÅINIZI TL OLARAK GÄ°RÄ°NÄ°Z: ');%maas' kullanÄ±cÄ±dan aldÄ±k.
+if maas<0%maaÅŸ 0 dan kÃ¼Ã§Ã¼k olamaz.
+    fprintf('NEGATÄ°F BÄ°R DEÄER GÄ°RDÄ°NÄ°Z!!!\n');
 else
-    if maas>=6000%maaş 6000 den büyük veya eşitse kredi onaylanacak.
-        fprintf('KREDİ BAŞVURUNUZ ONAYLANMIŞTIR \n');
-    else %değilse kamu çalışanı olup olmadığı sorulacak.        
-        kamu=input('KAMU PERSONELİYSENİZ e TUŞUNA DEĞİLSENİZ h TUŞUNA BASINIZ: ','s');
-        if kamu=='e'|| kamu=='E'%kamu çalışanıysa kredi onaylanır
-            fprintf('KREDİ BAŞVURUNUZ ONAYLANMIŞTIR \n');
+    if maas>=6000%maaÅŸ 6000 den bÃ¼yÃ¼k veya eÅŸitse kredi onaylanacak.
+        fprintf('KREDÄ° BAÅVURUNUZ ONAYLANMIÅTIR \n');
+    else %deÄŸilse kamu Ã§alÄ±ÅŸanÄ± olup olmadÄ±ÄŸÄ± sorulacak.        
+        kamu=input('KAMU PERSONELÄ°YSENÄ°Z e TUÅUNA DEÄÄ°LSENÄ°Z h TUÅUNA BASINIZ: ','s');
+        if kamu=='e'|| kamu=='E'%kamu Ã§alÄ±ÅŸanÄ±ysa kredi onaylanÄ±r
+            fprintf('KREDÄ° BAÅVURUNUZ ONAYLANMIÅTIR \n');
 
-        elseif kamu=='h'||kamu=='H'%kamu çalışanı değilse kredi onaylanmaz.
-            fprintf('KREDİ BAŞVURUNUZ ONAYLANMADI, HEM MAAŞINIZ DÜŞÜK HEM DE KAMU PERSONELİ DEĞİLSİNİZ. ÜZGÜNÜM KREDİ VEREMEM :( \n');
+        elseif kamu=='h'||kamu=='H'%kamu Ã§alÄ±ÅŸanÄ± deÄŸilse kredi onaylanmaz.
+            fprintf('KREDÄ° BAÅVURUNUZ ONAYLANMADI, HEM MAAÅINIZ DÃœÅÃœK HEM DE KAMU PERSONELÄ° DEÄÄ°LSÄ°NÄ°Z. ÃœZGÃœNÃœM KREDÄ° VEREMEM :( \n');
 
-        else%kullanıcı e ve h tuşundan başka bir tuş girdiği zaman hata verecek.
-            fprintf('!!! YANLIŞ TUŞLADINIZ, KAMU PERSONELİYSENİZ e TUŞUNA DEĞİLSENİZ h TUŞUNA BASINIZ !!! \n');
-            %Aslında döngü kullansaydık, programın tamamını while ile sonsuz döngüye alırdık.
-            %else deyimine girdiği zaman tekrar değer istenirdi diğer if elseif
-            %deyimlerinde ise break ile while döngüsünü sonlandırırdık. Ama
-            %döngü kullanımı yasaklandı :(
+        else%kullanÄ±cÄ± e ve h tuÅŸundan baÅŸka bir tuÅŸ girdiÄŸi zaman hata verecek.
+            fprintf('!!! YANLIÅ TUÅLADINIZ, KAMU PERSONELÄ°YSENÄ°Z e TUÅUNA DEÄÄ°LSENÄ°Z h TUÅUNA BASINIZ !!! \n');
+            %AslÄ±nda dÃ¶ngÃ¼ kullansaydÄ±k, programÄ±n tamamÄ±nÄ± while ile sonsuz dÃ¶ngÃ¼ye alÄ±rdÄ±k.
+            %else deyimine girdiÄŸi zaman tekrar deÄŸer istenirdi diÄŸer if elseif
+            %deyimlerinde ise break ile while dÃ¶ngÃ¼sÃ¼nÃ¼ sonlandÄ±rÄ±rdÄ±k. Ama
+            %dÃ¶ngÃ¼ kullanÄ±mÄ± yasaklandÄ± :(
         end
     end
 end
