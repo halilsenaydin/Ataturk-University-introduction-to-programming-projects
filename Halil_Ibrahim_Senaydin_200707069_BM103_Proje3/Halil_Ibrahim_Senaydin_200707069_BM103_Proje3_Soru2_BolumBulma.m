@@ -1,12 +1,12 @@
-function bolum=Halil_Ibrahim_Senaydin_200707069_BM103_Proje3_Soru2_BolumBulma(bolunen,bolen)
+function bolum=Soru2_BolumBulma(bolunen,bolen)
 
 %Bu fonksiyon 2.sorunun 3. alt fonksiyonudur. 2 alt fonksiyon zorunlu
-%tutulmuştu ama ben 3. alt fonksiyonu da kullanmak istedim.
+%tutulmuÅŸtu ama ben 3. alt fonksiyonu da kullanmak istedim.
 
-bolum=0; %Bolum sayacı ilk değeri 0'dır. Daha sayıyı bölmeye başlamadık :)
-while bolunen>=bolen % Döngüye giriyorsa hala bölünecek kadar büyüktür sayı
+bolum=0; %Bolum sayacÄ± ilk deÄŸeri 0'dÄ±r. Daha sayÄ±yÄ± bÃ¶lmeye baÅŸlamadÄ±k :)
+while bolunen>=bolen % DÃ¶ngÃ¼ye giriyorsa hala bÃ¶lÃ¼necek kadar bÃ¼yÃ¼ktÃ¼r sayÄ±
     bolunen=bolunen-bolen;
-    bolum=bolum+1; % Bölümü 1 artırarak kaç defa bolündüğünü buluruz. 
+    bolum=bolum+1; % BÃ¶lÃ¼mÃ¼ 1 artÄ±rarak kaÃ§ defa bolÃ¼ndÃ¼ÄŸÃ¼nÃ¼ buluruz. 
 end
 
 
