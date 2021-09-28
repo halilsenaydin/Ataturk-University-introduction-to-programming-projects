@@ -1,71 +1,59 @@
-%ADI: HALİL İBRAHİM
-%SOYADI: ŞENAYDIN
-%ÖĞRENCİ NO: 200707069
-%BÖLÜM: BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ
-%DERSİN ADI VE DERSİN KODU: PROGRAMLAMAYA GİRİŞ - BIM-103-50-50
-%DERSİN VERİLDİĞİ AKADEMİK DÖNEM: 2020-2021 EĞİTİM ÖĞRETİM YILI 1.YARIYIL
-%PROJENİN NUMARASI: PROJE 1
-%DERSİ VEREN ÖĞRETİM ÜYESİNİN ADI: TOLGA AYDIN
-
 clear;
 clc;
-fprintf('PROGRAMI ÇALIŞTIRDIĞINIZ İÇİN TEŞEKKÜR EDERİM :) \n');
-%değişkenleri deve notasyonuna göre adlandırdım.
-sayi1=input('1. SAYIYI GİRİNİZ: ');
-enBuyuk=sayi1;%1.sayıyı en büyük ilan ettim
-enKucuk=sayi1;%1.sayıyı en küçük de ilan ettim
-%NOT: HOCAM BURADA enKucuk değişkenini aslına ilk if deyiminde yapacaktım
-%Ama sadece orada tanımlandığı için diğer if deyimleri onu göremedi.
-%global() fonksiyonunu kullanayım dedim ama MATLAB'de sanırım kullanımı
-%farklı. Ben python ile kullanımı aynı sandım ama değilmiş.
+fprintf('PROGRAMI Ã‡ALIÅTIRDIÄINIZ Ä°Ã‡Ä°N TEÅEKKÃœR EDERÄ°M :) \n');
+%deÄŸiÅŸkenleri deve notasyonuna gÃ¶re adlandÄ±rdÄ±m.
 
-sayi2=input('2. SAYIYI GİRİNİZ: ');
-if sayi2>enBuyuk%eğer 2. sayı enBuyuk'den büyükse 2. sayı en büyük olur.
+sayi1=input('1. SAYIYI GÄ°RÄ°NÄ°Z: ');
+enBuyuk=sayi1;%1.sayÄ±yÄ± en bÃ¼yÃ¼k ilan ettim
+enKucuk=sayi1;%1.sayÄ±yÄ± en kÃ¼Ã§Ã¼k de ilan ettim
+
+sayi2=input('2. SAYIYI GÄ°RÄ°NÄ°Z: ');
+if sayi2>enBuyuk%eÄŸer 2. sayÄ± enBuyuk'den bÃ¼yÃ¼kse 2. sayÄ± en bÃ¼yÃ¼k olur.
     enBuyuk=sayi2;
-    %enKucuk=sayi1; %Burada sayi2>sayi1 olduğuna göre enKucuk sayıda sayi1
-                    %olmuş oluyor. Yukarıdaki notda bahsettiğim gibi onu burada kullanamadım
+    %enKucuk=sayi1; %Burada sayi2>sayi1 olduÄŸuna gÃ¶re enKucuk sayÄ±da sayi1
+                    %olmuÅŸ oluyor. YukarÄ±daki notda bahsettiÄŸim gibi onu burada kullanamadÄ±m
 elseif sayi2<enKucuk
     enKucuk=sayi2;
 end
 
-sayi3=input('3. SAYIYI GİRİNİZ: ');
-if sayi3>enBuyuk%eğer 3. sayı enBuyuk'den büyükse 3. sayı en büyük olur.
+sayi3=input('3. SAYIYI GÄ°RÄ°NÄ°Z: ');
+if sayi3>enBuyuk%eÄŸer 3. sayÄ± enBuyuk'den bÃ¼yÃ¼kse 3. sayÄ± en bÃ¼yÃ¼k olur.
     enBuyuk=sayi3;
-elseif sayi3<enKucuk%eğer 3.sayı enKucuk'den küçükse 3.sayı en küçük olur.
+elseif sayi3<enKucuk%eÄŸer 3.sayÄ± enKucuk'den kÃ¼Ã§Ã¼kse 3.sayÄ± en kÃ¼Ã§Ã¼k olur.
     enKucuk=sayi3;
 end
 
 
-sayi4=input('4. SAYIYI GİRİNİZ: ');
-if sayi4>enBuyuk%eğer 4. sayı enBuyuk'den büyükse 4. sayı en büyük olur.
+sayi4=input('4. SAYIYI GÄ°RÄ°NÄ°Z: ');
+if sayi4>enBuyuk%eÄŸer 4. sayÄ± enBuyuk'den bÃ¼yÃ¼kse 4. sayÄ± en bÃ¼yÃ¼k olur.
     enBuyuk=sayi4;
-elseif sayi4<enKucuk%eğer 4.sayı enKucuk'den küçükse 4.sayı en küçük olur.
+elseif sayi4<enKucuk%eÄŸer 4.sayÄ± enKucuk'den kÃ¼Ã§Ã¼kse 4.sayÄ± en kÃ¼Ã§Ã¼k olur.
     enKucuk=sayi4;
 end
 
-sayi5=input('5. SAYIYI GİRİNİZ: ');
-if sayi5>enBuyuk%eğer 5. sayı enBuyuk'den büyükse 5. sayı en büyük olur.
+sayi5=input('5. SAYIYI GÄ°RÄ°NÄ°Z: ');
+if sayi5>enBuyuk%eÄŸer 5. sayÄ± enBuyuk'den bÃ¼yÃ¼kse 5. sayÄ± en bÃ¼yÃ¼k olur.
     enBuyuk=sayi5;
-elseif sayi5<enKucuk%eğer 5.sayı enKucuk'den küçükse 5.sayı en küçük olur.
+elseif sayi5<enKucuk%eÄŸer 5.sayÄ± enKucuk'den kÃ¼Ã§Ã¼kse 5.sayÄ± en kÃ¼Ã§Ã¼k olur.
     enKucuk=sayi5;
 end
 
-sayi6=input('6. SAYIYI GİRİNİZ: ');
-if sayi6>enBuyuk%eğer 6. sayı enBuyuk'den büyükse 6. sayı en büyük olur.
+sayi6=input('6. SAYIYI GÄ°RÄ°NÄ°Z: ');
+if sayi6>enBuyuk%eÄŸer 6. sayÄ± enBuyuk'den bÃ¼yÃ¼kse 6. sayÄ± en bÃ¼yÃ¼k olur.
     enBuyuk=sayi6;
-elseif sayi6<enKucuk%eğer 6.sayı enKucuk'den küçükse 6.sayı en küçük olur.
+elseif sayi6<enKucuk%eÄŸer 6.sayÄ± enKucuk'den kÃ¼Ã§Ã¼kse 6.sayÄ± en kÃ¼Ã§Ã¼k olur.
     enKucuk=sayi6;
 end
 
 fark=abs(enBuyuk-enKucuk);
 bolum=abs(enBuyuk/enKucuk);
 
-fprintf('Girdiğiniz sayılardan en büyük sayı ile en küçük sayı arasındaki fark: %g\n',fark);
+fprintf('GirdiÄŸiniz sayÄ±lardan en bÃ¼yÃ¼k sayÄ± ile en kÃ¼Ã§Ã¼k sayÄ± arasÄ±ndaki fark: %g\n',fark);
 
-if enKucuk==0%en küçük sayı 0 ise tanımsız olur !!! bolum değişkeni Inf olarak döndürür.
-    fprintf('EN BÜYÜK SAYI İLE EN KÜÇÜK SAYININ BÖLÜMLERİ TANIMSIZDIR.\nEn küçük sayı 0 olur ve payda=0 olacağından ifade tanımsız olur!!\n');
+if enKucuk==0%en kÃ¼Ã§Ã¼k sayÄ± 0 ise tanÄ±msÄ±z olur !!! bolum deÄŸiÅŸkeni Inf olarak dÃ¶ndÃ¼rÃ¼r.
+    fprintf('EN BÃœYÃœK SAYI Ä°LE EN KÃœÃ‡ÃœK SAYININ BÃ–LÃœMLERÄ° TANIMSIZDIR.\nEn kÃ¼Ã§Ã¼k sayÄ± 0 olur ve payda=0 olacaÄŸÄ±ndan ifade tanÄ±msÄ±z olur!!\n');
 else
-    fprintf('Girdiğiniz sayılardan en büyük sayı ile en küçük sayının bölümü: %g\n',bolum);
+    fprintf('GirdiÄŸiniz sayÄ±lardan en bÃ¼yÃ¼k sayÄ± ile en kÃ¼Ã§Ã¼k sayÄ±nÄ±n bÃ¶lÃ¼mÃ¼: %g\n',bolum);
 end
 
 
