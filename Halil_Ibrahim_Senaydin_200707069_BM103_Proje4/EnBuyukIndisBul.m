@@ -1,4 +1,4 @@
-function diziIndisi = Halil_Ibrahim_Senaydin_200707069_BM103_Proje4_EnBuyukIndisBul(A)
+function diziIndisi = EnBuyukIndisBul(A)
 
 diziBoyut = length(A);
 
